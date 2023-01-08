@@ -1,0 +1,121 @@
+/* Reset */
+
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 18.5px;
+  line-height: 135%;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Reusables */
+
+:root {
+  --white-smoke: #eee;
+  --black: #000;
+  --nero: #222;
+  --silver: #bbb;
+  --prussian-blue: #003153;
+}
+
+ul, ol {
+  padding-left: 40px;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--silver);
+  margin: 20px auto;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: var(--prussian-blue);
+  text-decoration: none;
+  border-bottom: 1px solid var(--prussian-blue);
+}
+
+/* Body and main */
+
+body {
+  background-color: var(--black);
+  color: var(--nero);
+  font-family: 'Caudex';
+}
+
+.container-of-main {
+  background-color: var(--white-smoke);
+  border-radius: 7px;
+  margin: 20px 15px;
+  padding: 20px;
+}
+
+main {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 20px;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Image */
+
+.wise-master-cat-photo {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+.wise-master-cat-photo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.wise-master-cat-photo figcaption {
+  width: 500px;
+}
+
+/* Copy */
+
+.copy {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.copy p, .copy ul {
+  margin-bottom: 15px;
+}
+
+/* Footer */
+
+footer {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  text-align: center;
+}
